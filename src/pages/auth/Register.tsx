@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
-import type { AppDispatch, RootState } from "@/store";
-import { register } from "@/slices/authSlice";
+import type { AppDispatch, RootState } from "@/store/store";
+import { register } from "@/store/slices/authSlice";
 import { useNavigate, Link } from "react-router-dom";
 import {
   Card,

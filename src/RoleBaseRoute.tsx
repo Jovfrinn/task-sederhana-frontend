@@ -1,6 +1,6 @@
 import { Navigate } from "react-router-dom";
 import { useSelector } from "react-redux";
-import { RootState } from "@/store";
+import type { RootState } from "@/store/store";
 
 interface Props {
   children: JSX.Element;

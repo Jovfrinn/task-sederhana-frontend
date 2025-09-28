@@ -1,5 +1,5 @@
 import { useSelector } from "react-redux";
-import type { RootState } from "@/store";
+import type { RootState } from "@/store/store";
 import { useNavigate } from "react-router-dom";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Dialog, DialogTrigger } from "@/components/ui/dialog";
@@ -9,7 +9,7 @@ import { Button } from "@/components/ui/button";
 import { useEffect, useState } from "react";
 import type { Project } from "@/services/projectService";
 import { ProjectService } from "@/services/projectService";
-import { ProjectModal } from "@/components/ProjectModal";
+import { ProjectModal } from "@/pages/Dashboard/components/ProjectModal";
 import Swal from "sweetalert2";
 import { showSuccess, showError } from "@/helper/alert";
 import { Skeleton } from "@/components/ui/skeleton";

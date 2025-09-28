@@ -1,7 +1,7 @@
 import { Home, Users, X, LogOut } from "lucide-react";
 import { NavLink, useNavigate } from "react-router-dom";
 import { useDispatch } from "react-redux";
-import { logout } from "../slices/authSlice";
+import { logout } from "../store/slices/authSlice";
 
 interface SidebarProps {
   sidebarOpen: boolean;

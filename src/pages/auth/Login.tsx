@@ -2,8 +2,8 @@ import { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { useDispatch, useSelector } from "react-redux";
-import type { AppDispatch, RootState } from "@/store";
-import { login, fetchProfile } from "@/slices/authSlice";
+import type { AppDispatch, RootState } from "@/store/store";
+import { login, fetchProfile } from "@/store/slices/authSlice";
 import {
   Card,
   CardHeader,

@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { useSelector } from "react-redux";
-import type { RootState } from "@/store";
+import type { RootState } from "@/store/store";
 import type { Tasks } from "@/services/taskService";
 import { useParams } from "react-router-dom";
 import { TaskService } from "@/services/taskService";
@@ -25,9 +25,9 @@ import {
   TableRow,
 } from "@/components/ui/table";
 import { MoreHorizontal } from "lucide-react";
-import { TaskModal } from "@/components/TaskModal";
-import AssignUserModal from "@/components/AssignUserModal";
-import TaskStatusFilter from "@/components/TaskStatusFilter";
+import { TaskModal } from "@/pages/Task/components/TaskModal";
+import AssignUserModal from "@/pages/Task/components/AssignUserModal";
+import TaskStatusFilter from "@/pages/Task/components/TaskStatusFilter";
 import { Circle, Timer, CircleCheckBig } from "lucide-react";
 import Swal from "sweetalert2";
 import { showSuccess, showError } from "@/helper/alert";
