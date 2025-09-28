@@ -12,8 +12,17 @@ import Task from "./pages/Task/Task";
 import ProtectedRoute from "./components/protectedRoute";
 import AppInitializer from "@/components/AppInitializer";
 import Register from "./pages/auth/Register";
+import { Navigate } from "react-router-dom";
 
 const router = createBrowserRouter([
+  {
+    path: "/",
+    element: (
+      <ProtectedRoute>
+        <Navigate to="/dashboard" replace />
+      </ProtectedRoute>
+    ),
+  },
   {
     path: "/",
     element: (
